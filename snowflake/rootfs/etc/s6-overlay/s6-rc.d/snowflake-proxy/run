@@ -1,0 +1,49 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# =============================
+# Snowflake for Home Assistant
+# =============================
+declare -a options
+
+bashio::log.info "Starting Snowflake proxy..."
+
+if bashio::config.has_value 'broker'; then
+    bashio::log.info "Custom WebRTC Broker found..."
+    options+=(-broker "$(bashio::config 'broker')")
+fi
+
+if bashio::config.has_value 'capacity'; then
+    bashio::log.info "Custom Capacity number found..."
+    options+=(-capacity "$(bashio::config 'capacity')")
+fi
+
+if bashio::config.has_value 'nat_retest_interval'; then
+    bashio::log.info "Custom NAT Retest Interval found..."
+    options+=(-nat-retest-interval "$(bashio::config 'nat_retest_interval')")
+fi
+
+if bashio::config.has_value 'relay'; then
+    bashio::log.info "Custom Websocket Relay URL found..."
+    options+=(-relay "$(bashio::config 'relay')")
+fi
+
+if bashio::config.has_value 'stun'; then
+    bashio::log.info "Custom STUN Broker found..."
+    options+=(-stun "$(bashio::config 'stun')")
+fi
+
+if bashio::config.has_value 'summary_interval'; then
+    bashio::log.info "Custom Summary Interval found..."
+    options+=(-summary-interval "$(bashio::config 'summary_interval')")
+fi
+
+if bashio::config.true 'keep_local_addresses'; then
+    options+=(-keep-local-addresses)
+fi
+
+if bashio::config.true 'verbose'; then
+    options+=(-verbose)
+fi
+
+# RUN snowflake-proxy
+exec snowflake-proxy "${options[@]}"

@@ -1,0 +1,25 @@
+configuration:
+  capacity:
+    name: Capacity
+    description: Defines how many users can connect to your node at the same time. (default 10)
+  nat_retest_interval:
+    name: NAT Retest Interval
+    description: Defines how often your proxy should test NAT connectivity. `0s` disables this option. Valid time units are "s", "m", "h". (default 24h0m0s)
+  summary_interval:
+    name: Summary Interval
+    description: Defines how often information about your proxy, such as how many people are using your proxy and how much bandwidth they are using, should be shown. (default 1h)
+  broker:
+    name: WebRTC Broker
+    description: This server connects your proxy together with Snowflake users. Do not change this in production environments.
+  relay:
+    name: Websocket Relay URL
+    description: This server relays messages sent from websockets. Do not change this in production environments.
+  stun:
+    name: STUN Broker
+    description: This server is used to discover the public IP address of your proxy, as well as any firewall-related restrictions that may prevent a peer-to-peer connection. Do not change this in production environments.
+  keep_local_addresses:
+    name: Provide information about your local addresses
+    description: This reveals the local IP of your machine and the local IP of your router. Keeping this setting disabled is recommended.
+  verbose:
+    name: Verbose Logs
+    description: Do you want your logs to be extra, extra detailed?

@@ -1,0 +1,27 @@
+name: "Snowflake Proxy"
+description: "Help people in censored countries access the Internet"
+slug: "snowflake"
+version: "dev"
+apparmor: false # todo: enable this
+init: false # required for s6
+startup: application # after boot
+not_needed: str?, bool?
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+options:
+  capacity: 10
+  nat_retest_interval: "24h"
+  summary_interval: "1h"
+schema:
+  capacity: int?
+  nat_retest_interval: str?
+  summary_interval: str?
+  broker: str?
+  relay: str?
+  stun: str?
+  keep_local_addresses: bool?
+  verbose: bool?
