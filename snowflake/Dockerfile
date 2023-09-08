@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Download Snowflake proxy
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    snowflake-proxy=2.3.1-1+b1
+    snowflake-proxy=latest
 
 RUN rm -rf \
     /tmp/* \
