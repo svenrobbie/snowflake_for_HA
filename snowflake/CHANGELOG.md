@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 ## [Unreleased]
 
 
-## [1.2.2] - 2023-12-21
+## [1.2.3] - 2023-12-21
 
 ### Added
 
@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Easy add addon repository button in README.
 - AppArmor is now enabled.
 - CAS signing is now enabled.
-- Added a logo.
+- Added a logo & icon.
 
 ### Fixed
 
