@@ -7,5 +7,6 @@ build_from:
 labels:
   org.opencontainers.image.title: "Snowflake Proxy for Home Assistant"
   org.opencontainers.image.description: "Help people in censored countries access the Internet."
-codenotary: true
-codenotary.signer: "hobby@c14h19no2.nl"
+codenotary:
+  base_image: hobby@c14h19no2.nl
+  signer: hobby@c14h19no2.nl
