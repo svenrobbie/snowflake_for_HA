@@ -1,0 +1,25 @@
+configuration:
+  capacity:
+    name: Capaciteit
+    description: Bepaalt hoeveel gebruikers tegelijkertijd verbinding kunnen maken met uw knooppunt. (standaard 10)
+  nat_retest_interval:
+    name: Herstelinterval voor NAT-test
+    description: Bepaalt hoe vaak uw proxy NAT-connectiviteit moet testen. 0s schakelt deze optie uit. Geldige tijdseenheden zijn "s" (seconden), "m" (minuten), "h" (uren). (standaard 24u0m0s)
+  summary_interval:
+    name: Samenvattingsinterval
+    description: Bepaalt hoe vaak informatie over uw proxy moet worden weergegeven, zoals hoeveel mensen uw proxy gebruiken en hoeveel bandbreedte ze gebruiken. (standaard 1 uur)
+  broker:
+    name: WebRTC-makelaar
+    description: Deze server verbindt uw proxy met Snowflake-gebruikers. Verander dit niet in productieomgevingen.
+  relay:
+    name: URL voor WebSocket-relay
+    description: Deze server geeft berichten door die zijn verzonden via websockets. Verander dit niet in productieomgevingen.
+  stun:
+    name: STUN-makelaar
+    description: Deze server wordt gebruikt om het openbare IP-adres van uw proxy te ontdekken, evenals eventuele firewall-gerelateerde beperkingen die een peer-to-peer-verbinding kunnen voorkomen. Verander dit niet in productieomgevingen.
+  keep_local_addresses:
+    name: Verschaf informatie over uw lokale adressen
+    description: Dit onthult het lokale IP-adres van uw computer en het lokale IP-adres van uw router. Het wordt aanbevolen om deze instelling uitgeschakeld te houden.
+  verbose:
+    name: Uitgebreide logboeken
+    description: Wilt u dat uw logboeken buitengewoon gedetailleerd zijn?
