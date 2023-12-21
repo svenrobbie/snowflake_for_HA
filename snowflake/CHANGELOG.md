@@ -6,14 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-- Working on AppArmor!
 
-## [1.1.2] - 2023-12-21
+## [1.2.0] - 2023-12-21
 
 ### Added
 
 - Dutch language support.
 - Easy add addon repository button in README.
+- AppArmor is now enabled.
+- CAS signing is now enabled.
 
 ### Fixed
 
