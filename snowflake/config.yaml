@@ -1,7 +1,7 @@
 name: "Snowflake Proxy"
 description: "Help people in censored countries access the Internet"
 slug: "snowflake"
-version: "1.2.1"
+version: "1.2.2"
 apparmor: true
 init: false # required for s6
 startup: application # after boot
