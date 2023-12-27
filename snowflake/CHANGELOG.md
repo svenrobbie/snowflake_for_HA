@@ -6,20 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-## [1.1.1] - 2023-12-21
+- Add Custom AppArmor file.
+
+## [1.2.4] - 2023-12-21
 
 ### Added
 
-- Dutch language support.
-- Easy add addon repository button in README.
+- Nothing.
 
 ### Fixed
 
-- Version information. (Now keeping an official one.)
+- Nothing.
 
 ### Changed
 
-- Maintainer info. Only me for now.
+- Docs have been updated.
+- CAS signing support has been removed for the time being. Check Github for details.
 
 ### Removed
 

@@ -73,22 +73,6 @@ that it finds appropriate, which can vary from update to update.
 The installation process does not differ from that of other add-ons for Home
 Assistant. The add-on is designed to work as soon as you start it.
 
-#### Hardening
-
-#### AppArmor
-
-[AppArmor](https://developers.home-assistant.io/docs/add-ons/presentation/#apparmor),
-which is the standard way of hardening add-ons within the Home Assistant
-ecosystem, has not been implemented yet.
-
-#### Distribution
-
-The way that this add-on will be distributed has, as of the time of this
-writing, not been decided. This impacts the ability of the maintainer to
-provide pre-built containers.
-
----
-
 ### License
 
 This add-on is distributed under the [MIT License](LICENSE).
